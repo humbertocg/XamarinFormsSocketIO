@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using Android.App;
 using Quobject.SocketIoClientDotNet.Client;
 using Newtonsoft.Json;
+//using test2projects1.Droid.Notificacion;
 
 [assembly: Dependency(typeof(SocketIOAndroid))]
 
@@ -48,7 +49,8 @@ namespace test2projects1.Droid.SocketIO
             socket.On("MensajeSocket", (data) =>
             {
                 RespuestaSocketIO resp = JsonConvert.DeserializeObject<RespuestaSocketIO>((string)data);
-                MessagingCenter.Send("texto", "Hi", "Mensaje " + resp.Mensaje);
+                //MessagingCenter.Send("texto", "Hi", "Mensaje " + resp.Mensaje);
+                Notificacion.Notificacion n = new Notificacion.Notificacion("Mensaje " + resp.Mensaje);
             });
             //socket.Connect();
             //Console.ReadLine();

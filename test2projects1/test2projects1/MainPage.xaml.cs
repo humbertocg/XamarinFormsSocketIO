@@ -38,7 +38,7 @@ namespace test2projects1
                 Device.BeginInvokeOnMainThread(() =>
                 {
                     //String a = arg;
-                    DisplayAlert("Message Received", arg, "OK");
+                    DisplayAlert("Message Received", arg, "Entendido");
                 });
             });
         }

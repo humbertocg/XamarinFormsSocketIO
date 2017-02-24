@@ -24,6 +24,9 @@ namespace test2projects1.Droid.SocketIO
             //App mp = (App)Xamarin.Forms.Application.Current; 
             //MessagingCenter.Send<object, string>("texto", "Hi", "StackOverFlow Rocks");
             //MessagingCenter.Send("texto", "Hi", "Connected to Socket.io ");
+
+            //Notificacion.Notificacion n = new Notificacion.Notificacion("Test notification offline");
+
             var option = new IO.Options
             {
                 Reconnection = true,

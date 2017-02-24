@@ -28,7 +28,7 @@ namespace test2projects1
                     DisplayAlert("Message Received", arg, "OK");
                 });
             });*/
-            DependencyService.Get<ISocket>().OpenConnection("http://192.168.1.75:8281");
+            DependencyService.Get<ISocket>().OpenConnection("http://192.168.1.85:8281");
         }
         protected override void OnAppearing()
         {

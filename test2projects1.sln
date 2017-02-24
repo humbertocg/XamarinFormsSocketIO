@@ -9,11 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test2projects1.Droid", "tes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test2projects1.iOS", "test2projects1\test2projects1.iOS\test2projects1.iOS.csproj", "{0CB672E7-DD27-46A4-89A4-92CB12DD859B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServidorNode.js", "ServidorNode.js", "{AF953430-E43A-4EBE-9FDD-9EE70ECE4C62}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\..\..\testnode\xamarinnode.js = ..\..\..\..\..\..\testnode\xamarinnode.js
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU

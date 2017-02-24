@@ -24,6 +24,9 @@ namespace test2projects1.Droid
             LoadApplication(new App());
             //MessagingCenter.Send<object, string>(this, "Hi", "Rocks");
             //MessagingCenter.Send(this, "Hi", "R7765ocks");
+            String Mensaje = Intent.Extras.GetString("Mensaje", "");
+            if(!Mensaje.Equals(""))
+                MessagingCenter.Send("texto", "Hi", "Mensaje " + Mensaje);
         }
     }
 }

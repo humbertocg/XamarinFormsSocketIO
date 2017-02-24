@@ -30,7 +30,7 @@ namespace test2projects1.Droid.Notificacion
             valuesForActivity.PutString("Mensaje", Mensaje);
             
             // When the user clicks the notification, SecondActivity will start up.
-            Intent resultIntent = new Intent(context, typeof(AnotherPage));
+            Intent resultIntent = new Intent(context, typeof(MainActivity));
 
             // Pass some values to SecondActivity:
             resultIntent.PutExtras(valuesForActivity);
@@ -42,7 +42,7 @@ namespace test2projects1.Droid.Notificacion
             */
             // Create the PendingIntent with the back stack:            
             PendingIntent resultPendingIntent =
-                PendingIntent.GetActivity(context, 0, resultIntent, PendingIntentFlags.UpdateCurrent);  //.GetPendingIntent(0, (int)PendingIntentFlags.UpdateCurrent);
+                PendingIntent.GetActivity(context, 0, resultIntent, PendingIntentFlags.OneShot);  //.GetPendingIntent(0, (int)PendingIntentFlags.UpdateCurrent);
             
             // Build the notification:
             NotificationCompat.Builder builder = new NotificationCompat.Builder(context)
